@@ -1,4 +1,5 @@
-/.venv
-/.vscode
-/docs
-/scripts
+*
+!/src
+!/pyproject.toml
+!/README.md
+!/requirements.txt
