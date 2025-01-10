@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -ex
+
+py3clean src
+uv run isort --sl --profile black src
+uv run black src
+uv run ruff check src
+uv run pyright src

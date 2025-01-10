@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+./scripts/lint
+./scripts/compile-reqs
+set -x
+
+git add .
+git commit -m "wip"
+git push

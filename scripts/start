@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -ex
+
+uv run dotenv run -- \
+    uvicorn python_fastapi_mongo_template:asgi $@

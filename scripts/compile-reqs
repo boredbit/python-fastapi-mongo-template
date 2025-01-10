@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -ex
+
+uv pip compile -qo requirements.txt pyproject.toml
